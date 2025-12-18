@@ -3,76 +3,190 @@
 <head>
     <meta charset="UTF-8">
     <title>Erick Tolentino | Data Analyst</title>
+
     <style>
         body {
-            font-family: Arial, sans-serif;
-            max-width: 900px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            color: #f5f5f5;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 1100px;
             margin: auto;
-            padding: 40px;
-            background-color: #f9f9f9;
-            color: #333;
+            padding: 60px 30px;
         }
-        h1, h2 {
-            color: #222;
+
+        /* HERO */
+        .hero {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            margin-bottom: 60px;
         }
-        .project {
-            background: white;
-            padding: 20px;
+
+        .hero img {
+            width: 180px;
+            border-radius: 50%;
+            border: 4px solid #1db954;
+        }
+
+        h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 20px;
+            color: #b3b3b3;
             margin-bottom: 20px;
-            border-radius: 8px;
         }
+
+        /* SECTIONS */
+        h2 {
+            margin-top: 70px;
+            margin-bottom: 25px;
+            border-bottom: 2px solid #1db954;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        /* PROJECT CARDS */
+        .project {
+            background: #1e1e1e;
+            border-radius: 18px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 12px 30px rgba(0,0,0,0.35);
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
+
+        .project:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 25px 50px rgba(0,0,0,0.45);
+        }
+
+        .project h3 {
+            margin-top: 0;
+            color: #1db954;
+        }
+
+        /* SKILLS */
+        .skills {
+            margin-top: 20px;
+        }
+
+        .skill {
+            display: inline-block;
+            background: #1db954;
+            color: #000;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 14px;
+            margin: 5px 6px 0 0;
+            font-weight: 600;
+        }
+
         a {
-            color: #0066cc;
+            color: #1db954;
+            font-weight: bold;
             text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 80px;
+            color: #aaa;
+            font-size: 14px;
         }
     </style>
 </head>
+
 <body>
+<div class="container">
 
-<h1>Erick Tolentino</h1>
-<p><strong>Junior Data Analyst</strong></p>
+    <!-- HERO -->
+    <div class="hero">
+        <img src="https://avatars.githubusercontent.com/innaqui" alt="Erick Tolentino">
+        <div>
+            <h1>Erick Tolentino</h1>
+            <p class="subtitle">Junior Data Analyst</p>
+            <p>
+                Junior Data Analyst with hands-on experience in Python, pandas, SQL,
+                data visualization, and A/B testing. Actively seeking an entry-level
+                data analyst role.
+            </p>
 
-<p>
-Junior Data Analyst with hands-on experience in Python, pandas, SQL, data visualization, and A/B testing.
-Actively seeking an entry-level data analyst role.
-</p>
+            <div class="skills">
+                <span class="skill">Python</span>
+                <span class="skill">pandas</span>
+                <span class="skill">SQL</span>
+                <span class="skill">Data Visualization</span>
+                <span class="skill">A/B Testing</span>
+            </div>
+        </div>
+    </div>
 
-<h2>Projects</h2>
-<div class="project">
-    <h3>Spotify Wrapped – Data Analysis</h3>
+    <!-- PROJECTS -->
+    <h2>Projects</h2>
+
+    <div class="project">
+        <h3>Spotify Wrapped – Data Analysis</h3>
+        <p>
+            Recreated a Spotify Wrapped–style analysis using Python and pandas.
+            The project explores listening behavior, top artists, tracks,
+            favorite genres, and listening trends over time.
+        </p>
+        <p>
+            <a href="https://github.com/innaqui/spotify-wrapped-analysis" target="_blank">
+                View Project on GitHub →
+            </a>
+        </p>
+    </div>
+
+    <div class="project">
+        <h3>Vehicle Market Analysis</h3>
+        <p>
+            Exploratory data analysis using Python and pandas to identify
+            market trends and insights.
+        </p>
+        <p>
+            <a href="https://github.com/innaqui/numpy" target="_blank">
+                GitHub Repository →
+            </a>
+        </p>
+    </div>
+
+    <div class="project">
+        <h3>A/B Test Analysis</h3>
+        <p>
+            Statistical analysis of an A/B experiment to evaluate conversion
+            performance and business impact.
+        </p>
+        <p>
+            <a href="#" target="_blank">
+                GitHub Repository →
+            </a>
+        </p>
+    </div>
+
+    <!-- CONTACT -->
+    <h2>Contact</h2>
     <p>
-        Recreated a Spotify Wrapped–style analysis using Python and pandas.
-        This project analyzes listening behavior, top artists, tracks,
-        favorite genres, and listening trends over time.
+        <a href="https://www.linkedin.com" target="_blank">LinkedIn</a> |
+        <a href="https://github.com/innaqui" target="_blank">GitHub</a>
     </p>
-    <p>
-        <a href="https://github.com/innaqui/spotify-wrapped-analysis" target="_blank">
-            View Project on GitHub
-        </a>
-    </p>
+
+    <footer>
+        © 2025 · Erick Tolentino · Data Analytics Portfolio
+    </footer>
+
 </div>
-
-<div class="project">
-    <h3>Vehicle Market Analysis</h3>
-    <p>Exploratory data analysis using Python and pandas to identify trends and insights.</p>
-    <p>
-        <a href="https://github.com/innaqui/numpy" target="_blank">GitHub Repository</a>
-    </p>
-</div>
-
-<div class="project">
-    <h3>A/B Test Analysis</h3>
-    <p>Statistical analysis of an A/B experiment to evaluate conversion performance.</p>
-    <p>
-        <a href="#" target="_blank">GitHub Repository</a>
-    </p>
-</div>
-
-<h2>Contact</h2>
-<p>
-<a href="https://www.linkedin.com" target="_blank">LinkedIn</a> |
-<a href="https://github.com/innaqui" target="_blank">GitHub</a>
-</p>
-
 </body>
 </html>
